@@ -51,7 +51,13 @@ ExportedObj/
 *.pdb
 *.mdb
 *.opendb
-*.VC.db
+*.VC.db´
+
+# Auto-generated packages and cache
+Packages/manifest.json
+Packages/packages-lock.json
+Library/
+PackageCache/
 
 # Unity3D generated meta files
 *.pidb.meta
