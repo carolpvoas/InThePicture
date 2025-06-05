@@ -9,14 +9,26 @@ public class ImageRecognitionManager : MonoBehaviour
     [SerializeField] 
     private ARTrackedImageManager trackedImageManager;
 
+    public GameObject canvasUI;
+
     void Awake()
     {
         //Debug.Log("Lala");
-        if (trackedImageManager == null)
+        /*if (trackedImageManager == null)
         {
             trackedImageManager = FindObjectOfType<ARTrackedImageManager>();
             Debug.Log("Assigned ARTrackedImageManager dynamically: " + trackedImageManager);
-        }
+        }*/
+    }
+
+    void Update()
+    {
+        //Debug.Log("Hello");
+       /* if (Input.GetKeyDown("space"))
+        {
+            Debug.Log("Hello");
+            //canvasUI.SetActive(true);
+        }*/
     }
 
     void OnEnable()
@@ -32,7 +44,7 @@ public class ImageRecognitionManager : MonoBehaviour
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-
+        canvasUI.SetActive(true);
         Debug.Log("Lala");
 
         foreach (ARTrackedImage trackedImage in eventArgs.added)
@@ -49,6 +61,7 @@ public class ImageRecognitionManager : MonoBehaviour
 
     private void HandleImage(ARTrackedImage image)
     {
+        canvasUI.SetActive(true);
         string imageName = image.referenceImage.name;
         Debug.Log("Lalala: " + imageName);
 
