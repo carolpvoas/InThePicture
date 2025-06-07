@@ -302,8 +302,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 364
-    y: 24
+    x: 363
+    y: 79
     width: 1103
     height: 526
   m_SerializedDataModeController:
@@ -900,7 +900,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.14409433, y: 0.79463005, z: -0.20740291, w: -0.55207545}
     speed: 2
-    m_Value: {x: -0.1440941, y: 0.79462874, z: -0.20740257, w: -0.55207455}
+    m_Value: {x: -0.14626384, y: 0.78878826, z: -0.20587818, w: -0.56038755}
   m_Size:
     m_Target: 2
     speed: 2
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 576
+    y: 631
     width: 1467
     height: 355
   m_SerializedDataModeController:
@@ -1015,7 +1015,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e6b60000
     m_LastClickedID: 46822
-    m_ExpandedIDs: 00000000feb5000000b6000002b60000
+    m_ExpandedIDs: 00000000e6b60000e8b60000eab6000052b7000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1044,7 +1044,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000feb5000000b6000002b60000
+    m_ExpandedIDs: 00000000e6b60000e8b60000eab60000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1124,8 +1124,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1469
-    y: 24
+    x: 1468
+    y: 79
     width: 451
     height: 907
   m_SerializedDataModeController:
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 79
     width: 362
     height: 526
   m_SerializedDataModeController:
@@ -1197,18 +1197,18 @@ MonoBehaviour:
       m_ExpandedIDs: f858ffff1059ffff3e5cffff445cffff4c5cffff565cffff4462ffffa26cffffba6cffff3270ffff3c70ffff4870ffff5670ffff4876ffff3acdffff52cdffffc0d0ffffc6d0ffffced0ffffd8d0ffffc8d6ffff12dfffffbaf3ffff1cf7ffff8aa90000baea0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: ARTrackedImageManager
+        m_OriginalName: ARTrackedImageManager
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -20778
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 4}
@@ -1801,7 +1801,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 1.1923833, y: 1.6039244, z: -1.4267707}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1849,11 +1849,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.16100603, y: 0.1567927, z: -0.025916385, w: -0.97407466}
     speed: 2
-    m_Value: {x: -0.16100603, y: 0.15679269, z: -0.025916385, w: -0.9740746}
+    m_Value: {x: -0.015357019, y: 0.9745935, z: -0.07059558, w: -0.21200944}
   m_Size:
     m_Target: 1.150987
     speed: 2
-    m_Value: 1.150987
+    m_Value: 1.205222
   m_Ortho:
     m_Target: 0
     speed: 2

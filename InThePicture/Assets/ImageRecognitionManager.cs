@@ -1,27 +1,20 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class ImageRecognitionManager : MonoBehaviour
 {
-    [SerializeField] 
-    private ARTrackedImageManager trackedImageManager;
+    public ARTrackedImageManager trackedImageManager;
+    public GameObject uiCanvasPrefab;
 
     void Awake()
     {
-        //Debug.Log("Lala");
-        if (trackedImageManager == null)
-        {
-            trackedImageManager = FindObjectOfType<ARTrackedImageManager>();
-            Debug.Log("Assigned ARTrackedImageManager dynamically: " + trackedImageManager);
-        }
+        trackedImageManager = GetComponent<ARTrackedImageManager>();
     }
 
     void OnEnable()
     {
-        //Debug.Log("Lala");
         trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
     }
 
@@ -30,33 +23,15 @@ public class ImageRecognitionManager : MonoBehaviour
         trackedImageManager.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
+    void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
     {
-
-        Debug.Log("Lala");
-
-        foreach (ARTrackedImage trackedImage in eventArgs.added)
+        foreach (ARTrackedImage trackedImage in args.added)
         {
-            HandleImage(trackedImage);
-        }
-
-        foreach (ARTrackedImage trackedImage in eventArgs.updated)
-        {
-            if (trackedImage.trackingState == TrackingState.Tracking)
-                HandleImage(trackedImage);
-        }
-    }
-
-    private void HandleImage(ARTrackedImage image)
-    {
-        string imageName = image.referenceImage.name;
-        Debug.Log("Lalala: " + imageName);
-
-        if (imageName == "Image")
-        {
-            Debug.Log("Picture recognized!");
-            // Example: load a 2D game scene
-           // SceneManager.LoadScene("My2DGameScene");
+            // Instantiate UI as child of tracked image
+            GameObject ui = Instantiate(uiCanvasPrefab, trackedImage.transform);
+            ui.transform.localPosition = Vector3.zero;
+            ui.transform.localRotation = Quaternion.identity;
+            ui.transform.localScale = Vector3.one * 0.01f; // Adjust scale
         }
     }
 }
