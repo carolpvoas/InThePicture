@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotPosition: {fileID: 1279846379}
-  snapDistance: 0.5
+  snapDistance: 50
   placedCorrectly: 0
 --- !u!114 &353876839
 MonoBehaviour:
@@ -1000,7 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotPosition: {fileID: 1992884241}
-  snapDistance: 0.5
+  snapDistance: 50
   placedCorrectly: 0
 --- !u!61 &1323823316
 BoxCollider2D:
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotPosition: {fileID: 759789234}
-  snapDistance: 0.5
+  snapDistance: 50
   placedCorrectly: 0
 --- !u!61 &1526763273
 BoxCollider2D:

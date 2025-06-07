@@ -12,11 +12,11 @@ public class ImageRecognitionLoader : MonoBehaviour
     private bool canLoadScene = false;
     
     [SerializeField]
-    private string targetImageName = "The-Bus"; 
+    private string targetImageName = "TheBus"; 
     // nome da imagem na ReferenceImageLibrary
     
     [SerializeField]
-    private string sceneToLoad = "Scene2-Dialogue"; 
+    public string sceneToLoad = "Scene2-Dialogue"; 
     // nome da cena que quero carregar (ainda por definir, mas provavelmente) vai ser "Scene1"
     // Aqui dizemos qual é a cena que o jogo deve abrir quando a imagem for reconhecida.
     

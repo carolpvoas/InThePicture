@@ -25,5 +25,5 @@ MonoBehaviour:
       m_GuidHigh: 1992779121720543947
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
-    m_Name: The-Bus
+    m_Name: TheBus
     m_Texture: {fileID: 2800000, guid: 54d8c367661eece4cbcaf7910dc6a71b, type: 3}

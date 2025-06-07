@@ -3,10 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class GearMiniGame1 : MonoBehaviour
 {
-    public Gears[] gears;
+    public GearsScript[] gears;
     private bool sceneLoaded = false;
 
-    void Update()
+    void LateUpdate()
     {
         if (!sceneLoaded && AllGearsPlaced())
         {
@@ -18,7 +18,7 @@ public class GearMiniGame1 : MonoBehaviour
 
     bool AllGearsPlaced()
     {
-        foreach (Gears gear in gears)
+        foreach (GearsScript gear in gears)
         {
             Debug.Log($"{gear.name} placedCorrectly: {gear.placedCorrectly}");
             if (!gear.placedCorrectly)

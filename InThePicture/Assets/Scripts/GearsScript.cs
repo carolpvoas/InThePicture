@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Gears : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class GearsScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public RectTransform slotPosition;
     public float snapDistance = 150f;
