@@ -98,3 +98,7 @@ InThePicture/Temp/FSTimeGet-8b47bf473e5161249938ea4a4ed636c9
 *.dwlt
 /InThePicture/Temp/Burst
 /InThePicture/Temp
+
+workspace.xml
+InThePicture/.idea/.idea.InThePicture/.idea/workspace.xml
+/InThePicture/.idea
