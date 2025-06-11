@@ -9,7 +9,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.66F56946" = "greet"
+	"last_search.66F56946" = "culling mask"
 	"OpenInspectorPreview.66F56946" = "0"
 	"currentGroup.66F56946" = null
 }
@@ -68,6 +68,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"culling"
 ]
 searchItemFavorites = [
 ]

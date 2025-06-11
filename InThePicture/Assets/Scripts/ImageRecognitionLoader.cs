@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class ImageRecognitionLoader : MonoBehaviour
 {
     private ARTrackedImageManager trackedImageManager;
-    private float timeSinceStart = 0f;
+    private float timeSinceStart;
     private bool canLoadScene = false;
     
     [SerializeField]
