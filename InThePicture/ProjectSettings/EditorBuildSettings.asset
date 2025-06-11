@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene6-Women.unity
     guid: 183b4c00a12129b40b06432e60f955dc
+  - enabled: 1
+    path: Assets/Scenes/Scene8-MeioTetris.unity
+    guid: df0a1595782235e4481a6c67790f8f12
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}

@@ -200,7 +200,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: nextSceneName
-      value: Scene7-MeioTetris
+      value: Scene8-MeioTetris
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
