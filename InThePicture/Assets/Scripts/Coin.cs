@@ -3,15 +3,17 @@ using UnityEngine.EventSystems;
 
 public class Coin : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    private RectTransform rectTransform;
+    private RectTransform uiPosition;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
+    private Vector2 originalPosition;
 
-    public bool placed = false;
+
+    public bool isPlaced = false;
 
     void Awake()
     {
-        rectTransform = GetComponent<RectTransform>();
+        uiPosition = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
         canvasGroup = GetComponent<CanvasGroup>();
         if (canvasGroup == null)
@@ -20,15 +22,15 @@ public class Coin : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (placed) return;
+        if (isPlaced) return;
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (placed) return;
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if (isPlaced) return;
+        uiPosition.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -39,7 +41,7 @@ public class Coin : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
 
     public void SnapToBox(Vector2 targetPosition)
     {
-        rectTransform.anchoredPosition = targetPosition;
-        placed = true;
+        uiPosition.anchoredPosition = targetPosition;
+        isPlaced = true;
     }
 }

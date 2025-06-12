@@ -9,7 +9,7 @@ public class PayMachine : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         Coin coin = eventData.pointerDrag.GetComponent<Coin>();
-        if (coin != null && !coin.placed)
+        if (coin != null && !coin.isPlaced)
         {
             coin.SnapToBox(snapPosition.anchoredPosition);
             manager.AddCoin();

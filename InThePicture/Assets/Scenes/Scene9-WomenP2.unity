@@ -244,6 +244,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4763424157771227168, guid: c86d84d9114887c47bfcf8a271a4b959,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -187.97021
+      objectReference: {fileID: 0}
     - target: {fileID: 4867346493245438158, guid: c86d84d9114887c47bfcf8a271a4b959,
         type: 3}
       propertyPath: m_Camera
