@@ -46,6 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 0}
   dialogueText: {fileID: 0}
+  panel: {fileID: 0}
   dialogueLines: []
   nextSceneName: 
   textSpeed: 0.01
+  startOnAwake: 0
+  speakers:
+  - name: 
+    gameObject: {fileID: 0}
+  - name: 
+    gameObject: {fileID: 0}

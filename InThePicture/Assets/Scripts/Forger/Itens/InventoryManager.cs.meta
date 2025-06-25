@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 581499c8406025f4698630ba511a1540
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - inventoryGrid: {instanceID: 0}
+  - swordSprite: {instanceID: 0}
+  - potionSprite: {instanceID: 0}
+  - cornSprite: {fileID: 21300000, guid: 93005d01f62bbdc40bb2e599f115058c, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -209,6 +209,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: speakers.Array.data[0].name
+      value: Child
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: speakers.Array.data[1].name
+      value: Worker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialogueLines.Array.data[0].line
       value: "Sir\u2026 sorry to ask, but\u2026 why are you dressed like that? And
         why are you holding that tool? \r"
@@ -295,6 +305,16 @@ PrefabInstance:
       value: "And you\u2026 carry what you learn well. Someday, it'll be your turn
         to lift this up. \r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: speakers.Array.data[0].gameObject
+      value: 
+      objectReference: {fileID: 785002928}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: speakers.Array.data[1].gameObject
+      value: 
+      objectReference: {fileID: 951092019}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[0].speakerName

@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredCoins: 1
-  nextSceneName: NextScene
+  nextSceneName: Scene12-FinalScreen
 --- !u!1 &523251302
 GameObject:
   m_ObjectHideFlags: 0

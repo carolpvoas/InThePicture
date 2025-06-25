@@ -1,8 +1,10 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -14,8 +16,7 @@ public class DialogueSystem : MonoBehaviour
     public string nextSceneName;
     public float textSpeed = 0.05f;
     public bool startOnAwake = false;
-
-
+    
     [System.Serializable]
     public class DialogueLine
     {
@@ -24,18 +25,35 @@ public class DialogueSystem : MonoBehaviour
         public string line;
     }
 
+    [System.Serializable]
+    public class SpeakerEntry
+    {
+        public string name;          
+        public GameObject gameObject; 
+    }
+    
+
+    public List<SpeakerEntry> speakers;  // lista editável no Inspector
+
+    private Dictionary<string, GameObject> speakerDict;
+
     private int index;
     private bool isDialogueActive = false;  // controla se o diálogo está ativo
     
     void Start()
     {
+        speakerDict = new Dictionary<string, GameObject>(); // monta o dicionário para facilitar o acesso
+        foreach (var s in speakers)
+        {
+            if (!speakerDict.ContainsKey(s.name))
+                speakerDict.Add(s.name, s.gameObject);
+        }
+        
         dialogueText.text = string.Empty;
         nameText.text = string.Empty;
         isDialogueActive = false;   // no inicio diálogo desligado
         
         if (panel != null) panel.SetActive(false); // desativar o painel logo ao iniciar
-        
-        //StartDialogue();
         
         if (startOnAwake)
         {
@@ -61,11 +79,11 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-//    void StartDialogue()
-//    {
-//        index = 0; 
-//        StartCoroutine(TypeLine());
-//    }
+    //    void StartDialogue()
+    //    {
+    //        index = 0; 
+    //        StartCoroutine(TypeLine());
+    //    }
 
     public void StartForcedDialogue()
     {
@@ -79,18 +97,57 @@ public class DialogueSystem : MonoBehaviour
         StartCoroutine(TypeLine());
     }
 
+    void HighlightSpeaker(string currentSpeaker)
+    {
+        if (string.IsNullOrEmpty(currentSpeaker))
+        {
+            foreach (var go in speakerDict.Values)
+                SetSpeakerState(go, false);
+            return;
+        }
+
+        foreach (var kvp in speakerDict)
+        {
+            bool isActive = (kvp.Key == currentSpeaker);
+            SetSpeakerState(kvp.Value, isActive);
+        }
+    }
+
+    void SetSpeakerState(GameObject obj, bool isActive)
+    {
+        var sr = obj.GetComponent<SpriteRenderer>();
+        if (sr == null)
+        {
+            Debug.LogWarning("SpriteRenderer não encontrado em " + obj.name);
+            return;
+        }
+
+        if (isActive)
+        {
+            sr.color = Color.white; // cor normal
+            sr.sortingOrder = 0;   // traz para frente
+        }
+        else
+        {
+            sr.color = new Color(0.5f, 0.5f, 0.5f, 1f); // "sombra"
+            sr.sortingOrder = 0;    // joga para trás
+        }
+    }
+
+
+
     IEnumerator TypeLine()
     {
         dialogueText.text = "";
         nameText.text = dialogueLines[index].speakerName;
+        
+        HighlightSpeaker(dialogueLines[index].speakerName); // destaca o personagem atual
         
         foreach (char c in dialogueLines[index].line.ToCharArray())
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
-        //Type each character 1 by 1 para parecer mais um jogo
-
     }
 
     void NextLine()
@@ -119,7 +176,5 @@ public class DialogueSystem : MonoBehaviour
             //Adicionar mais scenes
             //Scene5-Bus
         }
-        
     }
-    
 }

@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryGrid : MonoBehaviour
@@ -12,10 +12,14 @@ public class InventoryGrid : MonoBehaviour
 
     void Start()
     {
-        rectTransform = GetComponent<RectTransform>();
+        /*rectTransform = GetComponent<RectTransform>();
         grid = new InventoryItem[gridWidth, gridHeight];
 
         GenerateGridVisual();
+        */
+        grid = new InventoryItem[gridWidth, gridHeight];
+        for (int i = 0; i < gridWidth * gridHeight; i++)
+            Instantiate(slotPrefab, transform);
     }
 
     void GenerateGridVisual()
@@ -35,14 +39,10 @@ public class InventoryGrid : MonoBehaviour
         if (x + item.width > gridWidth || y + item.height > gridHeight)
             return false;
 
-        for (int ix = 0; ix < item.width; ix++)
-        {
-            for (int iy = 0; iy < item.height; iy++)
-            {
-                if (grid[x + ix, y + iy] != null)
+        for (int i = 0; i < item.width; i++)
+            for (int j = 0; j < item.height; j++)
+                if (grid[x + i, y + j] != null)
                     return false;
-            }
-        }
 
         return true;
     }

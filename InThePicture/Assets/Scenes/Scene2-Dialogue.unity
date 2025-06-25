@@ -1302,6 +1302,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: speakers.Array.data[0].name
+      value: Driver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: speakers.Array.data[1].name
+      value: Worker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialogueLines.Array.data[0].line
       value: "Oh, great. Just my luck today. I really hope this doesn\u2019t affect
         my paycheck. As if delays weren\u2019t enough, now the bus won\u2019t even
@@ -1328,23 +1338,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: speakers.Array.data[0].gameObject
+      value: 
+      objectReference: {fileID: 870575346}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: speakers.Array.data[1].gameObject
+      value: 
+      objectReference: {fileID: 1059122885}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialogueLines.Array.data[0].speakerName
-      value: Worker
+      value: Driver
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[1].speakerName
-      value: Driver
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialogueLines.Array.data[2].speakerName
       value: Worker
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialogueLines.Array.data[3].speakerName
+      propertyPath: dialogueLines.Array.data[2].speakerName
       value: Driver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3].speakerName
+      value: Worker
       objectReference: {fileID: 0}
     - target: {fileID: 6016726120814434745, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}

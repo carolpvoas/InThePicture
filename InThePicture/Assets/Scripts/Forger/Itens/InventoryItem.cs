@@ -1,6 +1,9 @@
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Inventory/Item")]
+
 [System.Serializable]
+
 public class InventoryItem
 {
     public string itemName;
