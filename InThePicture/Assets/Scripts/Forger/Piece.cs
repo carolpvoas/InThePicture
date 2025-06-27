@@ -37,7 +37,7 @@ public class Piece : MonoBehaviour
         if (placed) return;
 
         grid.GetXY(transform.position, out int baseX, out int baseY);
-        Debug.Log("Tentando encaixar em: " + baseX + ", " + baseY);
+        Debug.Log("Tá a encaixar em: " + baseX + ", " + baseY);
 
         if (grid.CanPlace(shape, baseX, baseY))
         {
