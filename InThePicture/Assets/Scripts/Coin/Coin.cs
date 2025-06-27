@@ -23,6 +23,7 @@ public class Coin : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (isPlaced) return;
+        originalPosition = uiPosition.anchoredPosition;
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;
     }
@@ -37,6 +38,11 @@ public class Coin : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     {
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
+
+        if (!isPlaced)
+        {
+            uiPosition.anchoredPosition = originalPosition;
+        }
     }
 
     public void SnapToBox(Vector2 targetPosition)

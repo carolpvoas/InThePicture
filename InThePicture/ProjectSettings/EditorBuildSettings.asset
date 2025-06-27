@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene12-FinalScreen.unity
     guid: 8b5a13f58dd60124daa9eef7fd1cafe6
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: cfbd22452dcb0e640a2b03522a4e50fd
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af,
       type: 2}

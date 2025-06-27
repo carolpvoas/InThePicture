@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class DialogueSystem : MonoBehaviour
 {
     public TextMeshProUGUI nameText;        // novo campo para o nome da personagem
-    public TextMeshProUGUI dialogueText;    // texto da fala
+    public TextMeshProUGUI dialogueText;    // texto de fala
     //public TextMeshProUGUI textComponent;  escrever no report depois
     public GameObject panel;
     public DialogueLine[] dialogueLines;    
@@ -17,6 +17,10 @@ public class DialogueSystem : MonoBehaviour
     public float textSpeed = 0.05f;
     public bool startOnAwake = false;
     
+    public CharacterDialogues[] dialoguesByCharacter; // array de arrays: cada personagem tem as suas linhas
+    
+    
+
     [System.Serializable]
     public class DialogueLine
     {
@@ -65,7 +69,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (!isDialogueActive) return;  // se o diálogo não estiver ativo, ignora cliques
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Input.GetMouseButtonDown(0)) // funciona tanto com toque quanto clique do mouse
         {
             if (dialogueText.text == dialogueLines[index].line)
             {
@@ -177,4 +181,28 @@ public class DialogueSystem : MonoBehaviour
             //Scene5-Bus
         }
     }
+    
+    public void StartDialogueWithCharacter(int characterIndex)
+    {
+        if (characterIndex < 0 || characterIndex >= dialoguesByCharacter.Length)
+        {
+            Debug.LogError("Índice de personagem inválido para diálogo");
+            return;
+        }
+
+        dialogueLines = dialoguesByCharacter[characterIndex].lines; // define as linhas da personagem
+        index = 0;
+        isDialogueActive = true;
+        gameObject.SetActive(true);
+        if (panel != null) panel.SetActive(true);
+        StartCoroutine(TypeLine());
+    }
+
+}
+
+[System.Serializable]
+public class CharacterDialogues
+{
+    public string characterName;
+    public DialogueSystem.DialogueLine[] lines;
 }

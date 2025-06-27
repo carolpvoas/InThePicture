@@ -41,18 +41,15 @@ public class Piece : MonoBehaviour
 
         if (grid.CanPlace(shape, baseX, baseY))
         {
-            Vector2 snapPos = grid.GetWorldPosition(baseX, baseY);
+            Vector2 snapPos = grid.GetWorldPosition(baseX, baseY) + Vector2.one * (grid.cellSize / 2f);
             transform.position = snapPos;
             grid.PlaceShape(shape, baseX, baseY);
             placed = true;
             
             if (grid.IsGridFull()) {
-                Debug.Log("Vitória!");
-                if (!string.IsNullOrEmpty(nextSceneName))
-                    SceneManager.LoadScene(nextSceneName);
-                else
-                    Debug.LogWarning("Nome da próxima cena não está definido!");
+                SceneManager.LoadScene(nextSceneName);
             }
+
         }
         else
         {
