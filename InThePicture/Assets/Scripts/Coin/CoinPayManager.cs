@@ -3,16 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class CoinPayManager : MonoBehaviour
 {
-    public int requiredCoins = 3;
-    private int currentCoins = 0;
+    public int requiredValue = 10; // Valor necessário para passar de nível
+    private int currentValue = 0;
     public string nextSceneName = "NextScene";
 
-    public void AddCoin()
+    public void AddCoinValue(int coinValue)
     {
-        currentCoins++;
-        if (currentCoins >= requiredCoins)
+        currentValue += coinValue;
+        Debug.Log("Valor atual: " + currentValue);
+
+        if (currentValue >= requiredValue)
         {
-            Debug.Log("Todas as moedas colocadas!");
+            Debug.Log("Valor suficiente atingido! Passando de nível...");
             SceneManager.LoadScene(nextSceneName);
         }
     }

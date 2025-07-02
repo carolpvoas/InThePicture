@@ -19,6 +19,9 @@ public class DialogueSystem : MonoBehaviour
     
     public CharacterDialogues[] dialoguesByCharacter; // array de arrays: cada personagem tem as suas linhas
     
+    private Dictionary<GameObject, Vector3> originalScales = new Dictionary<GameObject, Vector3>();
+    float zoomFactor = 1.1f;
+    
     
 
     [System.Serializable]
@@ -47,10 +50,15 @@ public class DialogueSystem : MonoBehaviour
     void Start()
     {
         speakerDict = new Dictionary<string, GameObject>(); // monta o dicionário para facilitar o acesso
+        originalScales = new Dictionary<GameObject, Vector3>();
+        
         foreach (var s in speakers)
         {
             if (!speakerDict.ContainsKey(s.name))
                 speakerDict.Add(s.name, s.gameObject);
+            
+            if (!originalScales.ContainsKey(s.gameObject))
+                originalScales[s.gameObject] = s.gameObject.transform.localScale;
         }
         
         dialogueText.text = string.Empty;
@@ -125,18 +133,23 @@ public class DialogueSystem : MonoBehaviour
             Debug.LogWarning("SpriteRenderer não encontrado em " + obj.name);
             return;
         }
+        
+        Vector3 baseScale = obj.transform.localScale;
 
         if (isActive)
         {
-            sr.color = Color.white; // cor normal
-            sr.sortingOrder = 0;   // traz para frente
+            sr.color = Color.white; // cor clara
+            obj.transform.localScale = baseScale * zoomFactor; // zoom in
+            sr.sortingOrder = 10; // traz para frente
         }
         else
         {
-            sr.color = new Color(0.5f, 0.5f, 0.5f, 1f); // "sombra"
-            sr.sortingOrder = 0;    // joga para trás
+            sr.color = new Color(0.5f, 0.5f, 0.5f, 1f); // cor escura
+            obj.transform.localScale = baseScale; // volta à escala original
+            sr.sortingOrder = 0; // manda para trás
         }
     }
+
 
 
 
@@ -195,8 +208,11 @@ public class DialogueSystem : MonoBehaviour
         isDialogueActive = true;
         gameObject.SetActive(true);
         if (panel != null) panel.SetActive(true);
+        StopAllCoroutines();
         StartCoroutine(TypeLine());
     }
+    
+
 
 }
 

@@ -9,7 +9,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/6000.0.45f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Tests/Runtime/UGUI/Canvas/CanvasSizeCorrectInAwakeAndStart.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterSelectionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Coin/InfCoin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialogue/DialogueLine.cs" root0="FORCE_HIGHLIGHTING" />
@@ -17,7 +16,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Forger/GridSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Forger/Piece.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ImageRecognitionLoader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneTransitionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trash/GridFail.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@b18f5959dab1/Runtime/ARFoundation/ARTrackedImageManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@b18f5959dab1/Runtime/ARFoundation/SubsystemLifecycleManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,6 +89,7 @@
       <workItem from="1750242833976" duration="2404000" />
       <workItem from="1750807531055" duration="20829000" />
       <workItem from="1750973840909" duration="20165000" />
+      <workItem from="1751416658032" duration="8931000" />
     </task>
     <servers />
   </component>

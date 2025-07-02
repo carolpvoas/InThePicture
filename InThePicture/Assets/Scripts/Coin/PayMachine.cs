@@ -12,7 +12,7 @@ public class PayMachine : MonoBehaviour, IDropHandler
         if (coin != null && !coin.isPlaced)
         {
             coin.SnapToBox(snapPosition.anchoredPosition);
-            manager.AddCoin();
+            manager.AddCoinValue(coin.coinValue);
         }
     }
 }

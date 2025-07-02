@@ -8,8 +8,9 @@ public class Coin : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     private CanvasGroup canvasGroup;
     private Vector2 originalPosition;
 
-
     public bool isPlaced = false;
+
+    public int coinValue = 1; // Valor da moeda
 
     void Awake()
     {
