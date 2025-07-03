@@ -20,7 +20,7 @@ public class DialogueSystem : MonoBehaviour
     public CharacterDialogues[] dialoguesByCharacter; // array de arrays: cada personagem tem as suas linhas
     
     private Dictionary<GameObject, Vector3> originalScales = new Dictionary<GameObject, Vector3>();
-    float zoomFactor = 1.1f;
+    float zoomFactor = 1.2f;
     
     
 
@@ -128,27 +128,24 @@ public class DialogueSystem : MonoBehaviour
     void SetSpeakerState(GameObject obj, bool isActive)
     {
         var sr = obj.GetComponent<SpriteRenderer>();
-        if (sr == null)
-        {
-            Debug.LogWarning("SpriteRenderer não encontrado em " + obj.name);
-            return;
-        }
-        
-        Vector3 baseScale = obj.transform.localScale;
+        if (sr == null) return;
+    
+        if (!originalScales.ContainsKey(obj)) return;
+
+        Vector3 baseScale = originalScales[obj];
 
         if (isActive)
         {
-            sr.color = Color.white; // cor clara
-            obj.transform.localScale = baseScale * zoomFactor; // zoom in
-            sr.sortingOrder = 10; // traz para frente
+            sr.color = Color.white;
+            obj.transform.localScale = baseScale * zoomFactor;
         }
         else
         {
-            sr.color = new Color(0.5f, 0.5f, 0.5f, 1f); // cor escura
-            obj.transform.localScale = baseScale; // volta à escala original
-            sr.sortingOrder = 0; // manda para trás
+            sr.color = new Color(0.5f, 0.5f, 0.5f, 1f);
+            obj.transform.localScale = baseScale;
         }
     }
+
 
 
 

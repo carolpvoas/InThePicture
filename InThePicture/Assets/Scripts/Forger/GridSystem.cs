@@ -7,13 +7,13 @@ public class GridSystem : MonoBehaviour {
 
     private bool[,] grid;
 
-    void Start() {
-        grid = new bool[width, height];
-    }
-
+    
     // Converte coordenadas da grid para posição no mundo
     public Vector2 GetWorldPosition(int x, int y) {
         return (Vector2)transform.position + new Vector2(x * cellSize, y * cellSize);
+    }
+    void Start() {
+        grid = new bool[width, height];
     }
 
     // Converte posição no mundo para coordenadas da grid
@@ -102,4 +102,16 @@ public class GridSystem : MonoBehaviour {
             }
         }
     }
+    
+    public void ClearGrid()
+    {
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                grid[x, y] = false;
+            }
+        }
+    }
+
 }

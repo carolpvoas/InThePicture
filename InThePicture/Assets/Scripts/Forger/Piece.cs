@@ -12,11 +12,16 @@ public class Piece : MonoBehaviour
     public string nextSceneName;
 
     private bool placed = false;
+    
+    private Vector3 startPos;
+
 
     void Start()
     {
         grid = FindObjectOfType<GridSystem>();
         originalPos = transform.position;
+        startPos = transform.position;
+
     }
 
     
@@ -64,4 +69,11 @@ public class Piece : MonoBehaviour
         mousePos.z = 0f;
         return mousePos;
     }
+
+    public void ResetPosition()
+    {
+        transform.position = startPos;
+        placed = false;
+    }
+
 }
