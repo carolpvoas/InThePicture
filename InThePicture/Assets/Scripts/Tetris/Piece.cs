@@ -1,50 +1,79 @@
-/*using UnityEngine;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Piece : MonoBehaviour
 {
-    public Vector2Int[] localPositions;
-    private Vector3 originalPosition;
-    private Grid grid;
+    public Vector2Int[] shape; // Células relativas à origem (pivot)
+    public float cellSize = 1f;
 
-    private void Start()
+    private Vector3 dragOffset;
+    private Vector3 originalPos;
+    private GridSystem grid;
+    public string nextSceneName;
+
+    private bool placed = false;
+    
+    private Vector3 startPos;
+
+
+    void Start()
     {
-        originalPosition = transform.position;
-        grid = FindObjectOfType<Grid>();
+        grid = FindObjectOfType<GridSystem>();
+        originalPos = transform.position;
+        startPos = transform.position;
+
     }
 
-    private void OnMouseDown()
+    
+    void OnMouseDown()
     {
-        originalPosition = transform.position;
+        if (placed) return;
+        dragOffset = transform.position - GetMouseWorldPos();
     }
 
-    private void OnMouseDrag()
+    void OnMouseDrag()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0f;
-        transform.position = mousePos;
+        if (placed) return;
+        transform.position = GetMouseWorldPos() + dragOffset;
     }
 
-    private void OnMouseUp()
+    void OnMouseUp()
     {
-        Vector2 snappedPosition = new Vector2(
-            Mathf.Round(transform.position.x),
-            Mathf.Round(transform.position.y)
-        );
+        if (placed) return;
 
-        if (grid.IsValidPosition(localPositions, snappedPosition))
+        grid.GetXY(transform.position, out int baseX, out int baseY);
+        Debug.Log("Tá a encaixar em: " + baseX + ", " + baseY);
+
+        if (grid.CanPlace(shape, baseX, baseY))
         {
-            transform.position = snappedPosition;
-            grid.PlacePiece(localPositions, transform, snappedPosition);
-
-            if (grid.IsGridFull())
-            {
-                Debug.Log("Puzzle completo. Ativar a próxima cena.");
-                // loadscenae
+            Vector2 snapPos = grid.GetWorldPosition(baseX, baseY) + Vector2.one * (grid.cellSize / 2f);
+            transform.position = snapPos;
+            grid.PlaceShape(shape, baseX, baseY);
+            placed = true;
+            
+            if (grid.IsGridFull()) {
+                SceneManager.LoadScene(nextSceneName);
             }
+
         }
         else
         {
-            transform.position = originalPosition;
+            transform.position = originalPos;
         }
     }
-}*/
+
+
+    Vector3 GetMouseWorldPos()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0f;
+        return mousePos;
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = startPos;
+        placed = false;
+    }
+
+}

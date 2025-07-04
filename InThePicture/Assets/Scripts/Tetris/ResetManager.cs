@@ -14,15 +14,4 @@ public class ResetManager : MonoBehaviour
             piece.ResetPosition();
         }
     }
-    
-    public void ClearGrid()
-    {
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y < height; y++)
-            {
-                grid[x, y] = false;
-            }
-        }
-    }
 }

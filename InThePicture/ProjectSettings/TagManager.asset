@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Boy
+  - SmallSlot
+  - MediumSlot
+  - BigSlot
   layers:
   - Default
   - TransparentFX

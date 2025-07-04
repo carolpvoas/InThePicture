@@ -183,7 +183,7 @@ public class DialogueSystem : MonoBehaviour
             
             if (!string.IsNullOrEmpty(nextSceneName))
             {
-                SceneManager.LoadScene(nextSceneName);
+                SceneTransitionManager.Instance.ChangeSceneWithTutorial(nextSceneName);
             }
             
             //SceneManager.LoadScene("Scene3-Gears");

@@ -12,6 +12,8 @@ public class CharacterSelectionManager : MonoBehaviour
 
     public TextMeshProUGUI nameLabel;
     public string[] characterNames;
+    
+    public GameObject childPrompt; 
 
     private int currentIndex = 0;
 
@@ -68,6 +70,7 @@ public class CharacterSelectionManager : MonoBehaviour
         leftArrowButton.gameObject.SetActive(false);
         rightArrowButton.gameObject.SetActive(false);
         confirmButton.gameObject.SetActive(false);
+        childPrompt.SetActive(false); 
 
         if (dialogueSystem != null)
         {

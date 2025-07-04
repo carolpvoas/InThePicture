@@ -3,15 +3,23 @@ using UnityEngine.EventSystems;
 
 public class GearsScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public RectTransform slotPosition;
+    public enum GearType { Small, Medium, Large }
+    [Header("Configuração da engrenagem")]
+    public GearType gearType;
+
+    [Tooltip("Distância máxima para snap")]
     public float snapDistance = 150f;
-    public bool placedCorrectly = false;
+
+    [Tooltip("Slots válidos para esta engrenagem")]
+    public RectTransform[] validSlots;
+
+    [HideInInspector] public RectTransform currentSlot = null;
+    [HideInInspector] public bool placedCorrectly = false;
 
     private RectTransform rectTransform;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
-
-    private Vector2 initialPosition; // <- Salvar a posição inicial
+    private Vector2 initialPosition;
 
     void Awake()
     {
@@ -29,7 +37,6 @@ public class GearsScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 0.6f;
 
-        // Salva a posição inicial quando começa a arrastar
         initialPosition = rectTransform.anchoredPosition;
     }
 
@@ -47,18 +54,36 @@ public class GearsScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
 
-        float distance = Vector2.Distance(rectTransform.anchoredPosition, slotPosition.anchoredPosition);
+        float closestDistance = Mathf.Infinity;
+        RectTransform closestSlot = null;
 
-        if (distance < snapDistance)
+        foreach (RectTransform slot in validSlots)
         {
-            rectTransform.anchoredPosition = slotPosition.anchoredPosition;
+            float dist = Vector2.Distance(rectTransform.anchoredPosition, slot.anchoredPosition);
+            if (dist < closestDistance)
+            {
+                closestDistance = dist;
+                closestSlot = slot;
+            }
+        }
+
+        if (closestSlot != null && closestDistance < snapDistance)
+        {
+            rectTransform.anchoredPosition = closestSlot.anchoredPosition;
+            currentSlot = closestSlot;
             placedCorrectly = true;
+            canvasGroup.blocksRaycasts = false;
         }
         else
         {
-            // Volta para a posição inicial se falhar
             rectTransform.anchoredPosition = initialPosition;
+            currentSlot = null;
             placedCorrectly = false;
         }
+    }
+
+    public bool IsPlacedCorrectly()
+    {
+        return placedCorrectly && currentSlot != null;
     }
 }

@@ -3,34 +3,31 @@ using UnityEngine.SceneManagement;
 
 public class GearMiniGame1 : MonoBehaviour
 {
+    [Tooltip("Arraste aqui todas as engrenagens da cena")]
     public GearsScript[] gears;
+
+    [Tooltip("Nome da próxima cena para carregar quando todas as engrenagens estiverem corretas")]
+    public string nextSceneName = "Scene4-Dialogue2";
+
     private bool sceneLoaded = false;
 
     void LateUpdate()
     {
-        if (!sceneLoaded && AllGearsPlaced())
+        if (!sceneLoaded && AllGearsPlacedCorrectly())
         {
-            Debug.Log("Parabéns! Todas as engrenagens estão no lugar.");
+            Debug.Log("Todas as engrenagens estão corretamente colocadas!");
             sceneLoaded = true;
-            LoadNextScene();
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 
-    bool AllGearsPlaced()
+    bool AllGearsPlacedCorrectly()
     {
         foreach (GearsScript gear in gears)
         {
-            Debug.Log($"{gear.name} placedCorrectly: {gear.placedCorrectly}");
-            if (!gear.placedCorrectly)
+            if (!gear.IsPlacedCorrectly())
                 return false;
         }
         return true;
     }
-
-    void LoadNextScene()
-    {
-        SceneManager.LoadScene("Scene4-Dialogue2");
-    }
-    
-    
 }

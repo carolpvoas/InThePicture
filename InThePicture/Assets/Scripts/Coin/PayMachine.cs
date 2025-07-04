@@ -11,8 +11,9 @@ public class PayMachine : MonoBehaviour, IDropHandler
         Coin coin = eventData.pointerDrag.GetComponent<Coin>();
         if (coin != null && !coin.isPlaced)
         {
-            coin.SnapToBox(snapPosition.anchoredPosition);
-            manager.AddCoinValue(coin.coinValue);
+            Vector2 offsetPosition = snapPosition.anchoredPosition + manager.GetNextOffset();
+            coin.SnapToBox(offsetPosition);
+            manager.AddCoin();
         }
     }
 }

@@ -50,5 +50,6 @@ public class Coin : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     {
         uiPosition.anchoredPosition = targetPosition;
         isPlaced = true;
+        transform.SetAsLastSibling();
     }
 }

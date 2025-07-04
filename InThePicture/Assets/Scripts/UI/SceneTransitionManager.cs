@@ -1,65 +1,111 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SceneTransitionManager : MonoBehaviour
 {
     public CanvasGroup fadeCanvas;
-    //public Text transitionText;  // ou TextMeshProUGUI se preferires
-    public TextMeshProUGUI transitionText;
+    public TextMeshProUGUI tutorialText;
+    public Image tutorialImage;
+
     public float fadeDuration = 1f;
     public float messageDuration = 2f;
 
     public static SceneTransitionManager Instance;
+    private static bool hasInitialized = false;
 
-    private void Awake()
+    void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            fadeCanvas.alpha = 0f;
-            transitionText.text = "";
+            
+            if (!hasInitialized)
+            {
+                fadeCanvas.alpha = 0f;
+                hasInitialized = true;
+            }
         }
+        
         else
         {
             Destroy(gameObject);
+            return;
         }
+        
+        fadeCanvas.gameObject.SetActive(true);
     }
 
-    public void ChangeScene(string sceneName, string message = "")
+    public void ChangeSceneWithTutorial(string sceneName, string text = "", Sprite image = null)
     {
-        StartCoroutine(FadeSceneTransition(sceneName, message));
+        StartCoroutine(FadeAndLoadScene(sceneName, text, image));
     }
 
-    private IEnumerator FadeSceneTransition(string sceneName, string message)
+    IEnumerator FadeAndLoadScene(string sceneName, string text, Sprite image)
     {
-        yield return StartCoroutine(Fade(1f));
+        // Mostrar elementos se houver
+        if (!string.IsNullOrEmpty(text))
+        {
+            tutorialText.text = text;
+            tutorialText.gameObject.SetActive(true);
+        }
+        else
+        {
+            tutorialText.gameObject.SetActive(false);
+        }
 
-        transitionText.text = message;
+        if (image != null)
+        {
+            tutorialImage.sprite = image;
+            tutorialImage.gameObject.SetActive(true);
+        }
+        else
+        {
+            tutorialImage.gameObject.SetActive(false);
+        }
+
+        // Ativa bloqueio de interação antes do fade in
+        fadeCanvas.blocksRaycasts = true;
+        fadeCanvas.interactable = true;
+
+        // Fade in (escurecer)
+        yield return StartCoroutine(Fade(0, 1));
+
+        // Esperar para mostrar o tutorial
         yield return new WaitForSeconds(messageDuration);
 
-        yield return SceneManager.LoadSceneAsync(sceneName);
-        yield return null;
-
-        transitionText.text = "";
-        yield return StartCoroutine(Fade(0f));
-    }
-
-    private IEnumerator Fade(float targetAlpha)
-    {
-        float startAlpha = fadeCanvas.alpha;
-        float t = 0f;
-
-        while (t < fadeDuration)
+        // Carregar nova cena
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+        while (!asyncLoad.isDone)
         {
-            t += Time.deltaTime;
-            fadeCanvas.alpha = Mathf.Lerp(startAlpha, targetAlpha, t / fadeDuration);
             yield return null;
         }
 
-        fadeCanvas.alpha = targetAlpha;
+        // Fade out (voltar à cena)
+        yield return StartCoroutine(Fade(1, 0));
+
+        // Esconder os elementos
+        tutorialText.gameObject.SetActive(false);
+        tutorialImage.gameObject.SetActive(false);
+
+        // Desativa bloqueio de interação após fade out
+        fadeCanvas.blocksRaycasts = false;
+        fadeCanvas.interactable = false;
+    }
+
+
+    IEnumerator Fade(float from, float to)
+    {
+        float elapsed = 0f;
+        while (elapsed < fadeDuration)
+        {
+            fadeCanvas.alpha = Mathf.Lerp(from, to, elapsed / fadeDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        fadeCanvas.alpha = to;
     }
 }
