@@ -22,6 +22,9 @@ public class DialogueSystem : MonoBehaviour
     private Dictionary<GameObject, Vector3> originalScales = new Dictionary<GameObject, Vector3>();
     float zoomFactor = 1.2f;
     
+    public Image namePortrait;                  // Imagem do retrato ao lado do nome
+    public Sprite kidPortraitSprite;          // Sprite do miúdo
+    public string kidName = "Kid";   // nome que deve ativar a imagem
     
 
     [System.Serializable]
@@ -43,6 +46,7 @@ public class DialogueSystem : MonoBehaviour
     public List<SpeakerEntry> speakers;  // lista editável no Inspector
 
     private Dictionary<string, GameObject> speakerDict;
+    
 
     private int index;
     private bool isDialogueActive = false;  // controla se o diálogo está ativo
@@ -155,6 +159,20 @@ public class DialogueSystem : MonoBehaviour
         dialogueText.text = "";
         nameText.text = dialogueLines[index].speakerName;
         
+        if (dialogueLines[index].speakerName == kidName)
+        {
+            if (namePortrait != null && kidPortraitSprite != null)
+            {
+                namePortrait.sprite = kidPortraitSprite;
+                namePortrait.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            if (namePortrait != null)
+                namePortrait.gameObject.SetActive(false);
+        }
+        
         HighlightSpeaker(dialogueLines[index].speakerName); // destaca o personagem atual
         
         foreach (char c in dialogueLines[index].line.ToCharArray())
@@ -183,7 +201,14 @@ public class DialogueSystem : MonoBehaviour
             
             if (!string.IsNullOrEmpty(nextSceneName))
             {
-                SceneTransitionManager.Instance.ChangeSceneWithTutorial(nextSceneName);
+                if (SceneTransitionManager.Instance != null)
+                {
+                    SceneTransitionManager.Instance.ChangeSceneWithTutorial(nextSceneName);
+                }
+                else
+                {
+                    SceneManager.LoadScene(nextSceneName);
+                }
             }
             
             //SceneManager.LoadScene("Scene3-Gears");

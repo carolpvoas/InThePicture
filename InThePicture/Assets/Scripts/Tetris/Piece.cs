@@ -52,6 +52,8 @@ public class Piece : MonoBehaviour
             placed = true;
             
             if (grid.IsGridFull()) {
+                //GameProgressManager.Instance.UnlockCharacter("Basket Lady");
+                //GameProgressManager.Instance.UnlockCharacter("Indigenous Woman");
                 SceneManager.LoadScene(nextSceneName);
             }
 

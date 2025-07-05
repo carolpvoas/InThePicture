@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &9134679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &20714717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &55319195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &91855476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &95000885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &164749763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &184851137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &198968547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &252243471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 11
+  coinValue: 50
 --- !u!114 &257601262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &259445400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,7 +1501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &280999225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,7 +1619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &335353415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1855,7 +1855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &444316236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1973,7 +1973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &466195642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2071,7 +2071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -289.3, y: 26}
+  m_AnchoredPosition: {x: -311, y: 26}
   m_SizeDelta: {x: 121.15, y: 123.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469543822
@@ -2086,7 +2086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e82ea9f3079634a92f77d9038ef5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredCoins: 10
+  requiredCoins: 150
   nextSceneName: Scene12-FinalScreen
   offsetStep: {x: 10, y: -10}
 --- !u!1 &506157666
@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &506157669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,7 +2381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &531778685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2499,7 +2499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &541751177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,7 +2617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &579995661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2735,7 +2735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &580007916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2853,7 +2853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &607441018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2971,7 +2971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &649305535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3089,7 +3089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &741738554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3207,7 +3207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &812454942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &866466294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3443,7 +3443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &926750893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3561,7 +3561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &935920600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3679,7 +3679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1021870576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3828,7 +3828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1105816985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3946,7 +3946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &1110119339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,7 +4201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1198569692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4319,7 +4319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1238357957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4527,7 +4527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1278556665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4645,7 +4645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &1294167039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4763,7 +4763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &1295538169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5081,7 +5081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &1610291088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5199,7 +5199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1618101690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5317,7 +5317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1625748757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5435,7 +5435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1675004365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5536,8 +5536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -153, y: -122}
-  m_SizeDelta: {x: 651.81, y: 640.6}
+  m_AnchoredPosition: {x: -166.6, y: -142.4}
+  m_SizeDelta: {x: 679.01, y: 681.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1685232000
 MonoBehaviour:
@@ -5644,7 +5644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &1696546742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5762,7 +5762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &1713242144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5880,7 +5880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &1738813644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5998,7 +5998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &1787474431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6116,7 +6116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1802616074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6196,7 +6196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1853288468
 Transform:
   m_ObjectHideFlags: 0
@@ -6265,7 +6265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1860537739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6383,7 +6383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1900340483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6501,7 +6501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1913538518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6619,7 +6619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &1930536634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6824,7 +6824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 11
+  coinValue: 50
 --- !u!114 &1980212864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6942,7 +6942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &2027529309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7060,7 +7060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &2027576542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7178,7 +7178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 11
+  coinValue: 50
 --- !u!114 &2042623719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7296,7 +7296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 3
+  coinValue: 10
 --- !u!114 &2072524828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7414,7 +7414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 5
+  coinValue: 20
 --- !u!114 &2119470374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7532,7 +7532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!114 &2123659129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7714,7 +7714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaced: 0
-  coinValue: 1
+  coinValue: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -28,6 +28,7 @@ public class GearMiniGame1 : MonoBehaviour
             if (!gear.IsPlacedCorrectly())
                 return false;
         }
+        //GameProgressManager.Instance.UnlockCharacter("Worker");
         return true;
     }
 }

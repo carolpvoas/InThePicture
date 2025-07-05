@@ -24,6 +24,8 @@ public class CoinPayManager : MonoBehaviour
         if (currentCoins >= requiredCoins)
         {
             Debug.Log("Todas as moedas colocadas!");
+            //GameProgressManager.Instance.UnlockCharacter("Business Man");
+            //GameProgressManager.Instance.UnlockCharacter("Urban Woman");
             SceneManager.LoadScene(nextSceneName);
         }
     }

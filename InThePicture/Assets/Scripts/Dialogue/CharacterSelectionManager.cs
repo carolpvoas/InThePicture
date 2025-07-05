@@ -16,6 +16,7 @@ public class CharacterSelectionManager : MonoBehaviour
     public GameObject childPrompt; 
 
     private int currentIndex = 0;
+    
 
     void Start()
     {

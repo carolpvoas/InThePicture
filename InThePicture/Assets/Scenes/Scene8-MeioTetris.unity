@@ -1662,8 +1662,8 @@ Transform:
   m_GameObject: {fileID: 999241494}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -386, y: -860, z: -17276.982}
-  m_LocalScale: {x: 143.97485, y: 143.97485, z: 143.97485}
+  m_LocalPosition: {x: -386, y: -859.9999, z: -17276.982}
+  m_LocalScale: {x: 163.21945, y: 163.21945, z: 163.21945}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 593714271}
@@ -1726,7 +1726,7 @@ BoxCollider2D:
   m_Offset: {x: 0.9735001, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.17, y: 0.5}
+    pivot: {x: 0.12, y: 0.49852404}
     oldSize: {x: 2.95, y: 1.18}
     newSize: {x: 2.95, y: 1.18}
     adaptiveTilingThreshold: 0.5
@@ -2644,15 +2644,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 795406613086398861, guid: c86d84d9114887c47bfcf8a271a4b959,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 999241496}
-    - targetCorrespondingSourceObject: {fileID: 795406613086398861, guid: c86d84d9114887c47bfcf8a271a4b959,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1091571201}
     - targetCorrespondingSourceObject: {fileID: 795406613086398861, guid: c86d84d9114887c47bfcf8a271a4b959,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 687385404}
+    - targetCorrespondingSourceObject: {fileID: 795406613086398861, guid: c86d84d9114887c47bfcf8a271a4b959,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 999241496}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c86d84d9114887c47bfcf8a271a4b959, type: 3}
 --- !u!1 &1920042911

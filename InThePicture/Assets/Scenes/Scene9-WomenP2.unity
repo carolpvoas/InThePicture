@@ -986,7 +986,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -1001,31 +1001,41 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[0].line
-      value: "Each of these items\u2026 they\u2019re more than what they seem. You
-        carry more than just a load, you carry the world. Just like me and my basket. "
+      value: "Each of these items\u2026 they\u2019re more than what they seem. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[1].line
+      value: 'You carry more than just a load, you carry the world. Just like me
+        and my basket. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2].line
       value: "Sometimes, I\u2019m more than I seem, even if society only sees what\u2019s
         on the surface. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialogueLines.Array.data[2].line
+      propertyPath: dialogueLines.Array.data[3].line
       value: "Maybe that\u2019s why things fall. To remind us that what\u2019s visible
         isn\u2019t everything. And what falls\u2026 always finds its way back. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialogueLines.Array.data[3].line
+      propertyPath: dialogueLines.Array.data[4].line
       value: "Sometimes, we should take a closer look at what we\u2019re carrying.
-        Reflect a bit more. Not beat ourselves up over every choice, but be mindful
-        of what we choose to bring, and still make room for something new. "
+        Reflect a bit more. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialogueLines.Array.data[4].line
+      propertyPath: dialogueLines.Array.data[5].line
+      value: 'Not beat ourselves up over every choice, but be mindful of what we
+        choose to bring, and still make room for something new. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[6].line
       value: 'Just like going grocery shopping today. '
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
@@ -1051,16 +1061,26 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[2].speakerName
-      value: 'Indigenous Woman:'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialogueLines.Array.data[3].speakerName
       value: 'Basket Woman:'
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: dialogueLines.Array.data[3].speakerName
+      value: 'Indigenous Woman:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialogueLines.Array.data[4].speakerName
+      value: 'Basket Woman:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[5].speakerName
+      value: 'Basket Woman:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[6].speakerName
       value: 'Basket Woman:'
       objectReference: {fileID: 0}
     - target: {fileID: 6016726120814434745, guid: 1c6ace457f3b52e49b215f9ef96f4672,

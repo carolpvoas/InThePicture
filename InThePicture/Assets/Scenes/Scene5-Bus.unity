@@ -184,6 +184,11 @@ PrefabInstance:
       objectReference: {fileID: 1499046286}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: kidName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: nameText
       value: 
       objectReference: {fileID: 1126197344}
@@ -194,13 +199,40 @@ PrefabInstance:
       objectReference: {fileID: 1126197343}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: namePortrait
+      value: 
+      objectReference: {fileID: 2107505301}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: startOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: defaultSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 85a03ac4d2efac94dacf0eac60fbf8fa,
+        type: 3}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: nextSceneName
       value: Scene6-Women
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: characterImage
+      value: 
+      objectReference: {fileID: 172704594}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: kidPortraitSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 85a03ac4d2efac94dacf0eac60fbf8fa,
+        type: 3}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: characterWithImage
+      value: Kid
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -210,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: speakers.Array.data[0].name
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -343,7 +375,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[0].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -358,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[3].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -373,7 +405,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[6].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -383,7 +415,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[8].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -398,7 +430,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[11].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -408,7 +440,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialogueLines.Array.data[13].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -443,42 +475,42 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[2].characterName
-      value: Lady and Child
+      value: 'Indigenous Woman '
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[3].characterName
-      value: Buisness Man
+      value: Business Man
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[4].characterName
-      value: Scarf Lady
+      value: Urban Woman
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.size
-      value: 13
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.size
-      value: 1
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.size
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.size
-      value: 1
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.size
-      value: 1
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -490,174 +522,652 @@ PrefabInstance:
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[1].line
       value: "This is my work uniform. Makes it easier not to worry if I get dirty,
-        that\u2019s what it\u2019s for. And this tool right here? She\u2019s my best
-        friend. I do all kinds of jobs with her. Without her, I\u2019d be lost. "
+        that\u2019s what it\u2019s for. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[2].line
-      value: "And your hands\u2026 they look oily. Do you work with machines? "
+      value: "And this tool right here? She\u2019s my best friend. I do all kinds
+        of jobs with her. Without her, I\u2019d be lost. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[3].line
-      value: "I do, kid. I work with whatever needs doing. With the earth, with cement\u2014whatever
-        it takes. Today it was fixing a bus. Yesterday, I spent all day at the factory.
-        Tomorrow\u2026 who knows?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[4].line
-      value: "My teacher says Mexico is changing. She says it\u2019s because of people
-        like you that the country is rising"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[5].line
-      value: "She sounds like a good teacher. But rising a country... It\u2019s heavy.
-        And sometimes, the ones lifting it up get crushed underneath"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[6].line
-      value: "I\u2026 I want to be a doctor. Or maybe a teacher. I want to help.
-        Like you do. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[7].line
-      value: 'You already help, just by dreaming. What you carry to school, those
-        books, they weigh less than my tool, but they build more than most buildings. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[8].line
-      value: "Right here on this bench\u2026 we\u2019re all different. Each one with
-        a story, totally different lives. But we\u2019re all sitting on the same
-        path. You know what that means?  "
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[9].line
-      value: "Exactly. And you, with your clean clothes and clear eyes, you look
-        small\u2026 but you carry the future. I\u2019m the worn-out present. But
-        I\u2019m still standing. You\u2019ll go farther.  "
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[0].line
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[1].line
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[2].line
       value: "And your hands\u2026 they look oily. Do you work with machines? "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[3].line
-      value: "I do, kid. I work with whatever needs doing. With the earth, with cement\u2014whatever
-        it takes. Today it was fixing a bus. Yesterday, I spent all day at the factory.
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[4].line
+      value: 'I do, kid. I work with whatever needs doing. With the earth, with cement,
+        whatever it takes. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[5].line
+      value: "Today it was fixing a bus. Yesterday, I spent all day at the factory.
         Tomorrow\u2026 who knows?"
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[4].line
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[6].line
       value: "My teacher says Mexico is changing. She says it\u2019s because of people
         like you that the country is rising"
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[5].line
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[7].line
       value: "She sounds like a good teacher. But rising a country... It\u2019s heavy.
         And sometimes, the ones lifting it up get crushed underneath"
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[6].line
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[8].line
       value: "I\u2026 I want to be a doctor. Or maybe a teacher. I want to help.
         Like you do. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[7].line
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[9].line
       value: 'You already help, just by dreaming. What you carry to school, those
         books, they weigh less than my tool, but they build more than most buildings. '
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[0].line
+      value: "Yes, the basket is empty now.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[1].line
+      value: "But soon, it\u2019ll be full."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[2].line
+      value: "Today\u2019s for buying beans and flour.\nMaybe some eggs, if the price
+        hasn\u2019t gone up."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[3].line
+      value: "Tomorrow, I will take clothes to wash. At the big house, over on the
+        other side.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[4].line
+      value: "Washerwoman, yes ma\u2019am. With soap, stone, and a bent back.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[5].line
+      value: "I\u2019ve got no diploma, no Sunday shoes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[6].line
+      value: But the soap knows my name. So does the washbasin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[7].line
+      value: "I\u2019m paid by the week. And when they don\u2019t pay, I still bring
+        my dignity."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[8].line
-      value: "Right here on this bench\u2026 we\u2019re all different. Each one with
-        a story, totally different lives. But we\u2019re all sitting on the same
-        path. You know what that means?  "
+      value: "I wash the clothes of people who look at me like I\u2019m part of the
+        furniture. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[9].line
-      value: "Exactly. And you, with your clean clothes and clear eyes, you look
-        small\u2026 but you carry the future. I\u2019m the worn-out present. But
-        I\u2019m still standing. You\u2019ll go farther.  "
+      value: "But I\u2019m a person.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[0].line
-      value: 1
+      value: "You're looking at my feet, aren\u2019t you?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[1].line
+      value: "\rSorry\u2026 I didn\u2019t mean to be rude. It\u2019s just\u2026 I\u2019ve
+        never seen anyone like you in the city.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[2].line
+      value: "It\u2019s alright.\r\nMy feet know the land well.\r\nI grew up without
+        shoes. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[3].line
+      value: "Not out of shame, out of tradition. In my village, we walk like this.
+        It\u2019s like feeling the earth call you by name."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[4].line
+      value: Doesn't it hurt?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[5].line
+      value: "Sometimes.\r\nBut there are pains worse than stones on the road.\r\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[6].line
+      value: "And there are things shoes don\u2019t teach:\r\nsteadiness, balance,
+        knowing where you step."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[7].line
+      value: '*looks at her bag*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[8].line
+      value: What do you have in there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[9].line
+      value: "Besides things for the baby\u2026\r\nSome embroidery I made.\r\nAnd
+        dried peppers. I\u2019m taking them to trade at the market.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[0].line
-      value: 1
+      value: "Sir\u2026 sorry to ask, but\u2026 what\u2019s in there?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[1].line
+      value: '*raises an eyebrow, surprised by the boldness*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[2].line
+      value: '*raises an eyebrow, surprised by the boldness*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[3].line
+      value: 'My bag?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[4].line
+      value: "Paperwork. Contracts, invoices, receipts.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[5].line
+      value: Work stuff.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[6].line
+      value: "Oh\u2026 it looked heavy.\r\nIs it like a lunchbox you take to work?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[7].line
+      value: "No, kid. There\u2019s no food in here. Just papers worth more than
+        a lot of food.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[8].line
+      value: "And that\u2019s what you do all day? Carry papers around?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[9].line
+      value: 'More or less. '
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[0].line
-      value: 1
+      value: "Ma\u2019am\u2026 sorry to ask\u2026 but why are you so\u2026 well dressed?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[1].line
+      value: "Because I come from the city.\r\nAnd in the city, some people believe
+        clothes say who we are.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[2].line
+      value: "But what does a scarf say?\r\nIt looks like a snake all curled up.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[3].line
+      value: "This scarf\u2026 doesn\u2019t say much. But it keeps me warm, and it
+        matches my coat.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[4].line
+      value: Maybe it says I like to take care of myself, or that I have somewhere
+        to work.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[5].line
+      value: And your bag? Is it for papers too, like that other man?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[6].line
+      value: "No.\r\nMine has simple things: a book, a hairbrush, a small mirror,
+        maybe some lipstick.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[7].line
+      value: A mirror?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[8].line
+      value: Yes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[9].line
+      value: 'Sometimes we need to see ourselves to remember who we are. Especially
+        women. In a world always trying to tell us who we should be. '
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[10].line
-      value: "That we\u2019re all together\u2026 even if it doesn\u2019t look like
-        it?  "
+      value: "Right here on this bench\u2026 we\u2019re all different. Each one with
+        a story, totally different lives. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[11].line
-      value: "And they\u2019re part of it too, right? Even if they don\u2019t talk... "
+      value: "But we\u2019re all sitting on the same path. You know what that means?  "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[12].line
-      value: "Exactly. Everyone carries their own life. Everyone has a role. Doesn\u2019t
-        matter where we come from, in the end, whether you\u2019re rich or poor,
-        we\u2019re all riding the same bus. "
+      value: "Exactly. And you, with your clean clothes and clear eyes, you look
+        small\u2026 but you carry the future. "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[10].line
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[13].line
+      value: "I\u2019m the worn-out present. But I\u2019m still standing. You\u2019ll
+        go farther.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[14].line
       value: "That we\u2019re all together\u2026 even if it doesn\u2019t look like
         it?  "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[11].line
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[15].line
       value: "And they\u2019re part of it too, right? Even if they don\u2019t talk... "
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[16].line
+      value: Exactly. Everyone carries their own life. Everyone has a role.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[17].line
+      value: "Doesn\u2019t matter where we come from, in the end, whether you\u2019re
+        rich or poor, we\u2019re all riding the same bus. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[10].line
+      value: "And inside me\u2026 there\u2019s a strength you don\u2019t see.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[11].line
+      value: "I\u2019m no saint. No martyr."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[12].line
-      value: "Exactly. Everyone carries their own life. Everyone has a role. Doesn\u2019t
-        matter where we come from, in the end, whether you\u2019re rich or poor,
-        we\u2019re all riding the same bus. "
+      value: "I\u2019m practical. One of those who wakes before the sun, sweeps the
+        floor, heats the coffee, and gets on with it. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[13].line
+      value: "If the child gets sick, I\u2019m the one who runs.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[14].line
+      value: "If the man fails, I\u2019m the one who covers.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[15].line
+      value: "But I\u2019m not here to complain.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[16].line
+      value: "This basket, empty now, is a promise.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[17].line
+      value: "A promise of one more day overcome.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[18].line
+      value: "One more pot filled.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[19].line
+      value: One more floor clean.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[20].line
+      value: "In the painting, they say I\u2019m silent."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[21].line
+      value: 'But look closely: even silence carries weight.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[10].line
+      value: You made all that by yourself?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[11].line
+      value: "Yes. At night, after the day\u2019s work is done."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[12].line
+      value: "The cloth, the colors, the stitches\u2026 they all come from before
+        me. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[13].line
+      value: From my mother and her mother.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[14].line
+      value: "It\u2019s how we speak without opening our mouths."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[15].line
+      value: (The boy looks at the rebozo.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[16].line
+      value: "The fabric\u2026 It\u2019s beautiful. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[17].line
+      value: "It\u2019s called a rebozo. It\u2019s for everything: keeping warm,
+        carrying things\u2026 or covering silence when needed. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[18].line
+      value: "It\u2019s called a rebozo. It\u2019s for everything: keeping warm,
+        carrying things\u2026 or covering silence when needed. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[19].line
+      value: I see you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[20].line
+      value: "But I\u2019m one of the people who make decisions. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[21].line
+      value: 'And in my world, deciding is worth more than carrying. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[22].line
+      value: I think carrying is harder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[23].line
+      value: 'Maybe it is. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[24].line
+      value: "But the world doesn\u2019t spin on effort, it spins on profit. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[25].line
+      value: "You seem important. But you\u2019re sitting on the same bench as the
+        rest of us. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[26].line
+      value: "That\u2019s true\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[27].line
+      value: "Some roads don\u2019t come with VIP seats, no matter how much you pay. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[10].line
+      value: "I handle business. I make things move. I organize, invest, sign I earn
+        from other people\u2019s work. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[11].line
+      value: "You earn from other people\u2019s work? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[12].line
+      value: "Yes\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[13].line
+      value: Ideas are work too, you know? Some build with their hands, others with
+        numbers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[14].line
+      value: "But you can\u2019t eat paper. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[15].line
+      value: 'No. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[16].line
+      value: "But it decides who eats, and who doesn\u2019t."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[17].line
+      value: "So\u2026 you\u2019re like the boss of everyone? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[18].line
+      value: Hahaha.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[19].line
+      value: No.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[20].line
+      value: "But I\u2019m one of the people who make decisions. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[21].line
+      value: 'And in my world, deciding is worth more than carrying. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[22].line
+      value: I think carrying is harder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[23].line
+      value: 'Maybe it is. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[24].line
+      value: "But the world doesn\u2019t spin on effort, it spins on profit. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[25].line
+      value: "You seem important. But you\u2019re sitting on the same bench as the
+        rest of us. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[26].line
+      value: "That\u2019s true\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[27].line
+      value: "Some roads don\u2019t come with VIP seats, no matter how much you pay. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[10].line
+      value: "My aunt says a serious woman doesn\u2019t wear paint on her face."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[11].line
+      value: "Your aunt must be a strong woman.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[12].line
+      value: "But a woman can be serious, beautiful, painted, messy, all at the same
+        time.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[13].line
+      value: "Being a woman isn\u2019t just about how we dress."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[14].line
+      value: "It\u2019s about resisting every day, without losing who we are."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[15].line
+      value: So, your role is that? To show what it means to be a woman?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[16].line
+      value: Maybe.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[17].line
+      value: "Or maybe my role is to show there\u2019s no single way to be one. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[18].line
+      value: Today I take a ride on the bus.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[19].line
+      value: "But tomorrow\u2026 I might be the one giving orders in a room full
+        of suits. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[20].line
+      value: I think I like your scarf.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[21].line
+      value: Want to touch it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[22].line
+      value: '*He touches it.*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[23].line
+      value: It feels like a rolled-up cloud.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[24].line
+      value: 'Then hold on to that feeling, boy. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[25].line
+      value: "The world can be rough, but there\u2019s beauty, if you know where
+        to reach."
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[0].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -667,17 +1177,17 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[2].speakerName
-      value: Child
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
-        type: 3}
-      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[3].speakerName
       value: Worker
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[3].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[4].speakerName
-      value: Child
+      value: Worker
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -687,7 +1197,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[6].speakerName
-      value: Child
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -697,7 +1207,7 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[8].speakerName
-      value: Woker
+      value: Boy
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -707,72 +1217,207 @@ PrefabInstance:
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[0].speakerName
-      value: 1
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[1].speakerName
-      value: 1
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[2].speakerName
-      value: Child
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[3].speakerName
-      value: Worker
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[4].speakerName
-      value: Child
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[5].speakerName
-      value: Worker
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[6].speakerName
-      value: Child
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[7].speakerName
-      value: Worker
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[8].speakerName
-      value: Woker
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[9].speakerName
-      value: Worker
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[0].speakerName
-      value: 1
+      value: 'Indigenous Woman '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[1].speakerName
+      value: 'Boy:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[2].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[3].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[4].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[5].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[6].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[7].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[8].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[9].speakerName
+      value: Indigenous Woman
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[0].speakerName
-      value: 1
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[1].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[2].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[3].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[4].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[5].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[6].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[7].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[8].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[9].speakerName
+      value: Business Man
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[0].speakerName
-      value: 1
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[1].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[2].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[3].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[4].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[5].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[6].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[7].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[8].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[9].speakerName
+      value: Urban Woman
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[10].speakerName
-      value: Child
+      value: Woker
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -786,18 +1431,343 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[13].speakerName
+      value: Worker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[14].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[15].speakerName
+      value: Worker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[16].speakerName
+      value: Worker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[0].lines.Array.data[17].speakerName
+      value: Worker
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[10].speakerName
-      value: Child
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[11].speakerName
-      value: Worker
+      value: Basket Lady
       objectReference: {fileID: 0}
     - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
       propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[12].speakerName
-      value: Worker
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[13].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[14].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[15].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[16].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[17].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[18].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[19].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[20].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[1].lines.Array.data[21].speakerName
+      value: Basket Lady
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[10].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[11].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[12].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[13].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[14].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[15].speakerName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[16].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[17].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[18].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[19].speakerName
+      value: Indigenous Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[20].speakerName
+      value: Buisness Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[21].speakerName
+      value: Buisness Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[22].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[23].speakerName
+      value: Buisness Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[24].speakerName
+      value: Buisness Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[25].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[26].speakerName
+      value: Buisness Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[2].lines.Array.data[27].speakerName
+      value: Buisness Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[10].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[11].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[12].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[13].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[14].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[15].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[16].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[17].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[18].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[19].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[20].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[21].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[22].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[23].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[24].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[25].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[26].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[3].lines.Array.data[27].speakerName
+      value: Business Man
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[10].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[11].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[12].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[13].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[14].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[15].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[16].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[17].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[18].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[19].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[20].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[21].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[23].speakerName
+      value: Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[24].speakerName
+      value: Urban Woman
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655312354260030584, guid: 1c6ace457f3b52e49b215f9ef96f4672,
+        type: 3}
+      propertyPath: dialoguesByCharacter.Array.data[4].lines.Array.data[25].speakerName
+      value: Urban Woman
       objectReference: {fileID: 0}
     - target: {fileID: 6016726120814434745, guid: 1c6ace457f3b52e49b215f9ef96f4672,
         type: 3}
@@ -1085,7 +2055,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 600}
+  m_AnchoredPosition: {x: 0, y: 540}
   m_SizeDelta: {x: 619.36, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132434995
@@ -1331,7 +2301,7 @@ GameObject:
   - component: {fileID: 276305575}
   - component: {fileID: 276305576}
   m_Layer: 0
-  m_Name: Buisness Man
+  m_Name: Business Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2194,7 +3164,7 @@ Transform:
   m_GameObject: {fileID: 857251769}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.29172423, w: 0.9565025}
-  m_LocalPosition: {x: -549.44885, y: 509.10474, z: -17290.35}
+  m_LocalPosition: {x: -549.44885, y: 557, z: -17290.35}
   m_LocalScale: {x: 134.48048, y: 134.48048, z: 134.48048}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2827,6 +3797,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 795406613086398861, guid: c86d84d9114887c47bfcf8a271a4b959,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 2107505303}
+    - targetCorrespondingSourceObject: {fileID: 795406613086398861, guid: c86d84d9114887c47bfcf8a271a4b959,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 785002933}
     - targetCorrespondingSourceObject: {fileID: 795406613086398861, guid: c86d84d9114887c47bfcf8a271a4b959,
         type: 3}
@@ -3121,7 +4095,7 @@ GameObject:
   - component: {fileID: 1340687578}
   - component: {fileID: 1340687579}
   m_Layer: 0
-  m_Name: Lady and Child
+  m_Name: Indigenous Woman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3625,8 +4599,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.0800476, y: 3.6208496}
-  m_SizeDelta: {x: 70, y: 25}
+  m_AnchoredPosition: {x: 2.8821, y: 3.9152}
+  m_SizeDelta: {x: 70, y: 15.4591}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1633313186
 MonoBehaviour:
@@ -3738,7 +4712,7 @@ GameObject:
   - component: {fileID: 1638385162}
   - component: {fileID: 1638385163}
   m_Layer: 0
-  m_Name: Scarf Lady
+  m_Name: Urban Woman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4192,10 +5166,85 @@ MonoBehaviour:
   characterNames:
   - Worker
   - Basket Lady
-  - Lady and Child
-  - Buisness Man
-  - Scarf Lady
+  - Indigenous Woman
+  - Business Man
+  - Urban Woman
   childPrompt: {fileID: 857251769}
+--- !u!1 &2107505300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107505303}
+  - component: {fileID: 2107505302}
+  - component: {fileID: 2107505301}
+  m_Layer: 5
+  m_Name: ImagemDoPuto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2107505301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107505300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2107505302
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107505300}
+  m_CullTransparentMesh: 1
+--- !u!224 &2107505303
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107505300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1467206060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 486, y: -492}
+  m_SizeDelta: {x: 100, y: 225}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
