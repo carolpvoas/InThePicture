@@ -18,9 +18,11 @@ public class CoinPayManager : MonoBehaviour
         return thisOffset;
     }
 
-    public void AddCoin()
+    public void AddCoin(int value)
     {
-        currentCoins++;
+        //currentCoins++;
+        currentCoins += value;
+        Debug.Log($"Moeda adicionada. Total acumulado: {currentCoins}/{requiredCoins}");
         if (currentCoins >= requiredCoins)
         {
             Debug.Log("Todas as moedas colocadas!");
@@ -28,5 +30,8 @@ public class CoinPayManager : MonoBehaviour
             //GameProgressManager.Instance.UnlockCharacter("Urban Woman");
             SceneManager.LoadScene(nextSceneName);
         }
+    
+        
     }
+
 }

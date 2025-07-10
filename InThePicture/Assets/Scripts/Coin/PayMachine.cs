@@ -13,7 +13,9 @@ public class PayMachine : MonoBehaviour, IDropHandler
         {
             Vector2 offsetPosition = snapPosition.anchoredPosition + manager.GetNextOffset();
             coin.SnapToBox(offsetPosition);
-            manager.AddCoin();
+            //manager.AddCoin();
+            manager.AddCoin(coin.coinValue);
         }
     }
+
 }
