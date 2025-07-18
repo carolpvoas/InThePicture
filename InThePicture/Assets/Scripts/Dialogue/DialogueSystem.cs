@@ -24,7 +24,7 @@ public class DialogueSystem : MonoBehaviour
     
     public Image namePortrait;                  // Imagem do retrato ao lado do nome
     public Sprite kidPortraitSprite;          // Sprite do miúdo
-    public string kidName = "Kid";   // nome que deve ativar a imagem
+    public string kidName = "Kid";          // nome que deve ativar a imagem
     
 
     [System.Serializable]
@@ -55,6 +55,7 @@ public class DialogueSystem : MonoBehaviour
     {
         speakerDict = new Dictionary<string, GameObject>(); // monta o dicionário para facilitar o acesso
         originalScales = new Dictionary<GameObject, Vector3>();
+        //namePortrait.gameObject.SetActive(false);
         
         foreach (var s in speakers)
         {

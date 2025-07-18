@@ -18,6 +18,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@b18f5959dab1/Runtime/ARFoundation/ARTrackedImageManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@b18f5959dab1/Runtime/ARFoundation/SubsystemLifecycleManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@b18f5959dab1/Runtime/Simulation/Environment/SimulatedTrackedImage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@b18f5959dab1/Runtime/Simulation/Subsystems/ImageTracking/TrackedImageDiscoveryStrategy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@7e188ec401ea/Runtime/UI/XRUIInputModule.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -92,6 +93,8 @@
       <workItem from="1751655435878" duration="5105000" />
       <workItem from="1751673540685" duration="6192000" />
       <workItem from="1752105288678" duration="1268000" />
+      <workItem from="1752638563986" duration="10533000" />
+      <workItem from="1752750206060" duration="5787000" />
     </task>
     <servers />
   </component>
