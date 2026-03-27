@@ -11,7 +11,7 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (!hasTriggered && other.gameObject.CompareTag("Boy")) //perguntar ao professor se isto pode ser problema ou nao por ter um "ç" na tag
                                                                      //sendo que ha teclados que nem sequer conhecem este caracte
-                                                                    //Resposta.... sim... trava tudo
+                                                                    //Resposta.... sim... trava tudo, meter no report depois
         {
             hasTriggered = true;
             dialogueSystem.StartForcedDialogue(); // método personalizado para começar o diálogo

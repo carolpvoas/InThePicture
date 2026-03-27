@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GearMiniGame1 : MonoBehaviour
 {
-    [Tooltip("Arraste aqui todas as engrenagens da cena")]
+    [Tooltip("Arrastar aqui todas as engrenagens da cena")]
     public GearsScript[] gears;
 
     [Tooltip("Nome da próxima cena para carregar quando todas as engrenagens estiverem corretas")]
